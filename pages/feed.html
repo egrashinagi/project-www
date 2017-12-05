@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../style.css">
+	<title>Отзывы</title>
+</head>
+<body>
+	<div class="feed">
+		<h1 class="feed__title">Оставьте свой отзыв</h1>
+		<form class="form-feed" method="post" action="http://test.autre.ru/form.php">
+
+			<div class="left">
+				<div class="feed__full-name">
+					<h4>Ваше имя</h4>
+					<input name="name" class="feed__full-name-input" type="text" placeholder="Имя" required>
+					<h4>Ваша фамилия</h4>
+					<input name="surname" class="feed__full-surname-input" type="text" placeholder="Фамилия" required>
+				</div>
+
+				<div class="feed__sex">
+					<h4 class="feed__sex-title">Кто вы?</h4>
+					<label>
+						<input type="radio" name="sex" value="man" class="feed__sex-man">Мужчина
+					</label>
+					<label>
+						<input type="radio" name="sex" value="female" class="feed__sex-female">Женщина
+					</label>
+					<label>
+						<input type="radio" name="sex" value="fish" class="feed__sex-fish">Рыба
+					</label>
+				</div>
+
+				<div class="feed__profession">
+					<h4>Профессия?</h4>
+					<label>
+						<select name="profession" class="feed__profession-choose">
+							<!--задать вопрос преподавателю, как сделать вариант по умолчанию-->
+							<option value="choose"></option>
+							<option value="schoolboy">Школьник</option>
+							<option value="student">Студент</option>
+							<option value="workers&peasants">Рабочие и крестьяне</option>
+							<option value="office-plankton">Офисный планктон</option>
+							<option value="creators">Креаторс</option>
+							<option value="scientist">Ученый</option>
+							<option value="rich">Богач</option>
+						</select>
+					</label>
+				</div>
+			</div>
+			<div class="right">
+				<div class="feed__send">
+					<h4 class="feed__send-title">Оставьте отзыв</h4>
+					<textarea placeholder="Ваш отзыв" required name="feedback" maxlength="1000" rows="10" class="feed__send-text"></textarea>
+				</div>
+
+				<div class="feed__agree">
+					<label>
+						<input type="checkbox" class="feed__agree-check" name="agree">Я понимаю, что я делаю
+					</label>
+				</div>
+
+				<div class="feed__submit">
+					<input type="submit" class="feed__submit-send" value="Отправить">
+				</div>
+			</div>
+
+
+
+		</form>
+
+	</div>
+
+
+</body>
+</html>
